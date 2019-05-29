@@ -1,4 +1,4 @@
-import { icon } from './domain'
+import { icon } from './domain';
 
 const GetCharacterStats = ({
   typeUnicodeIcon, level, health, attack, defence,

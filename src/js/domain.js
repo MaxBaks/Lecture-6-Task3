@@ -13,31 +13,22 @@ export default class Character {
     switch (this.type) {
       case 'Bowman':
         return 'U+1F620';
-        break;
       case 'Swordsman':
         return 'U+1F621';
-        break;
       case 'Magician':
         return 'U+1F9D0';
-        break;
       case 'Daemon':
         return 'U+1F47F';
-        break;
       case 'Undead':
         return 'U+1F480';
-        break;
       case 'Zombie':
         return 'U+1F9DF';
-        break;
-      default: 
+      default:
         return '';
-        break;
     }
   }
 }
 
-const icon = (uni) => {
-  return String.fromCodePoint(uni.replace('U+', '0x'));
-}
+const icon = uni => String.fromCodePoint(uni.replace('U+', '0x'));
 
-export { icon }
+export { icon };
