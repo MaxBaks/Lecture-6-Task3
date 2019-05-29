@@ -1,5 +1,7 @@
+import { icon } from './domain'
+
 const GetCharacterStats = ({
-  level, health, attack, defence,
-}) => `&#128544 (${level}) &#9876 ${attack} &#128737 ${defence} &#10084 ${health}`;
+  typeUnicodeIcon, level, health, attack, defence,
+}) => `${icon(typeUnicodeIcon)} (${level}) ${icon('U+2694')} ${attack} ${icon('U+1F6E1')} ${defence} ${icon('U+2764')} ${health}`;
 
 export default GetCharacterStats;
